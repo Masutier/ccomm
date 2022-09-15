@@ -1,0 +1,24 @@
+{% extends 'allPcs/layout.html' %}
+{% load static %}
+{% block content %}
+
+<div class="col-8 mx-auto mt-5">
+
+    <div class="alert alert-secondary" role="alert">
+        Desea realmente eliminar el Pc "{{ pcs.name }}"
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+        
+        {% if request.user.is_authenticated %}
+            <form action="" method="POST">
+                {% csrf_token %}
+                <a class=" btn btn-danger btn-sm me-md-2 " href="{% url 'delpc' pcs.id %}">Eliminar</a>
+            </form>
+        {% endif %}
+        <button class=" btn btn-success btn-sm me-md-2 " onclick="goBack()">Cancel</button>
+    </div>
+
+</div>
+
+{% endblock content %}

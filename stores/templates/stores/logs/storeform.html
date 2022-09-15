@@ -1,0 +1,30 @@
+{% extends 'allPcs/layout.html' %}
+{% load static %}
+{% block content %}
+
+<div class="col-md-11 p-4 txtcol29 c">
+    <h1 class="c">Stores</h1>
+</div>
+
+<div class="col-11 row mx-auto">
+
+    <div class="col-9 ">
+        <div class="col-md-11 p-4 txtcol29 c">
+            <h3 class="ms-4">Formulario Tiendas</h3>
+        </div>
+
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form}}
+    
+            <input class="btb btn-success btn-small" type="submit" name="Someter Info">
+        </form>
+    
+        <div class="col-md-11 p-4 txtcol29 c">
+            <h3 class="ms-4">Formulario Tiendas</h3>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

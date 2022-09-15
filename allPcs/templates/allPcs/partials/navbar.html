@@ -1,0 +1,104 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark stic zz">
+    <div class="container-fluid">
+    <a class="navbar-brand atxt1" href="/">Computer World</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDrop" aria-controls="navbarDrop" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarDrop">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Computo</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="pcs">Pcs</a></li>
+                    <li><a class="dropdown-item" href="cpu">CPUs</a></li>
+                    <li><a class="dropdown-item" href="laptop">Laptops</a></li>
+                    <li><a class="dropdown-item" href="#">Tablets</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Servidores</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Suministros</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Imagen</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="monitors">Monitores</a></li>
+                    <li><a class="dropdown-item" href="#">Camaras</a></li>
+                    <li><a class="dropdown-item" href="#">Impresoras</a></li>
+                    <li><a class="dropdown-item" href="#">Ploters</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Suministros</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Almacenaje</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Memorias Pc</a></li>
+                    <li><a class="dropdown-item" href="#">Memorias Laptop</a></li>
+                    <li><a class="dropdown-item" href="#">Discos Duros</a></li>
+                    <li><a class="dropdown-item" href="#">Memoria USB</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Suministros</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perisfericos</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Mouse</a></li>
+                    <li><a class="dropdown-item" href="#">Teclados</a></li>
+                    <li><a class="dropdown-item" href="#">Camaras</a></li>
+                    <li><a class="dropdown-item" href="#">Microfonos</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gamers</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Controles</a></li>
+                    <li><a class="dropdown-item" href="#">Sillas</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Software</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Mac</a></li>
+                    <li><a class="dropdown-item" href="#">Linux</a></li>
+                    <li><a class="dropdown-item" href="#">Especial</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Windows</a></li>
+                    <li><a class="dropdown-item" href="#">Programas</a></li>
+                    <li><a class="dropdown-item" href="#">Juegos</a></li>
+                    <li><a class="dropdown-item" href="#">Licencias</a></li>
+                    <li><a class="dropdown-item" href="#">Antivirus</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Otros</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="caps">Cachuchas</a></li>
+                    <li><a class="dropdown-item" href="#">Ropa</a></li>
+                    <li><a class="dropdown-item" href="#">Soportes</a></li>
+                    <li><a class="dropdown-item" href="#">Escritorios</a></li>
+                </ul>
+            </li>
+            {% if request.user.is_authenticated %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Stores</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="stores">Stores</a></li>
+                    </ul>
+                </li>
+            {% endif %}
+            
+        </ul>
+        <!-- <ul class="navbar-nav mt-2 mt-lg-0">
+            {% if user.is_authenticated %}
+                <li class="nav-item navtext"><a class="nav-link atxt1" href="#">Out</a></li>
+            {% else %}
+                <li class="nav-item navtext"><a class="nav-link atxt1" href="#">Log</a></li>
+            {% endif %}
+        </ul> -->
+    </div>
+    </div>
+</nav>

@@ -1,0 +1,66 @@
+{% extends 'allPcs/layout.html' %}
+{% load static %}
+{% load humanize %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3 mx-auto mt-4">
+            <div class="col-11 mx-auto mb-3 c">
+                <h3>Otros</h3>
+                <h2>Cachuchas</h2>
+                <p>Computadores Usados y nuevos</p>
+                <p>Los computadores usados tienen una garantia de 3 meses</p>
+                <hr/>
+                {% if request.user.is_authenticated %}
+                    <div class="d-grid gap-2 mb-3">
+                        <a href="{% url 'createCap' %}" class="btn btn-info btn-sm">Create Otra Cosa</a>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="col-11 mx-auto p-2 c">
+                <img src="{% static '/img/products/PythonCap.png' %}" class="pc" alt="cachucha">
+            </div>
+        </div>
+        <div class="col-8 mx-auto mt-4 ">
+            <div class="titl c">
+                <h3>Cachuchas</h3>
+            </div>
+
+            <div class="col-11 mx-auto mb-5 p-3">
+                <div class="list-group">
+                    {% for cap in other %}
+                        <card href="#" class="list-group-item list-group-item-dark" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">{{ cap.name }}</h5>
+                                {% if cap.discount %}
+                                <small class="blanc">
+                                    Antes: <del class="mr-1 ">$ {{ cap.price|intcomma }}</del>
+                                </small>
+                                <small>
+                                    <strong>OFERTA: <span class="rojo">$ {{ cap.discount|intcomma }}</span></strong>
+                                </small>
+                                {% else %}
+                                    <small>
+                                        <span class="blanc">$ <strong>{{ cap.price|intcomma }}</strong></span>
+                                    </small>
+                                {% endif %}
+                            </div>
+                            <p class="mb-1 blanc">{{ cap.description }}</p>
+                            <small class="blanc">Entrega en una semana.</small>
+                            {% if request.user.is_authenticated %}
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <a href="{% url 'updateOther' cap.id %}" class="btn btn-info btn-sm me-md-2">Modificar</a>
+                                    <a href="{% url 'delother' cap.id %}" class="btn btn-danger btn-sm me-md-2">Eliminar</a>
+                                </div>
+                            {% endif %}
+                        </card>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,54 @@
+SISC Service and Tec
+
+Core 2 duo/quad, Ram - 4GB, Disco - 320 GB, Monitor - 17", Teclado y Mouse
+
+
+ migrate --run-syncdb
+
+
+
+1	Usado	PC Completo Core i7 M-19	Procesor Core I7, Ram 4 GB, DDS 500 GB, Monitor 19".	780000	750000	img/products/fullPc.jpeg			1	720000	Completo
+
+2	Usado	PC Completo Core i7 M-17	Procesor Core I7, Ram 4 GB, DDS 500 GB, Monitor 17".	750000	730000	img/products/fullPc_ffflDHk.jpeg			1	700000	Completo
+
+
+3	Usado	PC Completo Core 2 duo/Quad M-17	Procesor Core 2 duo/Quad, Ram 4 GB, DDS 320 GB, Monitor 17".	400000	370000	img/products/fullPc_xosdKtR.jpeg			1	340000	Completo
+
+4	Usado	PC Completo Core 2 duo/Quad M-19	Procesor Core 2 duo/Quad, Ram 4 GB, DDS 320 GB, Monitor 19".	430000	410000	img/products/fullPc_HxGVj5p.jpeg			1	380000	Completo
+
+
+5	Usado	PC Completo Core i3 M-17	Procesor Core I3, Ram 4 GB, DDS 500 GB, Monitor 17".	470000	450000	img/products/fullPc_C5Cb06I.jpeg			1	420000	Completo
+
+6	Usado	PC Completo Core i3 M-19	Procesor Core I3, Ram 4 GB, DDS 500 GB, Monitor 19".	500000	480000	img/products/fullPc_LlksxA7.jpeg			1	450000	Completo
+
+
+7	Usado	PC Completo Core i5 M-17	Procesor Core I5, Ram 4 GB, DDS 500 GB, Monitor 17".	570000	550000	img/products/fullPc_8u3RLbd.jpeg			1	520000	Completo
+
+8	Usado	PC Completo Core i5 M-19	Procesor Core I5, Ram 4 GB, DDS 500 GB, Monitor 19".	600000	580000	img/products/fullPc_XOlojkZ.jpeg			1	550000	Completo
+
+
+9	Usado	Laptop Core 2 duo/Quad	Portatil Laptop Core 2 duo/Quad, Ram 4 GB, DDS 160/320 GB.	370000	350000	img/products/laptop.jpg			1	320000	Laptop
+10	Usado	Laptop Core i3	Portatil Laptop Core I3, Ram 4 GB, DDS 500 GB.	480000	460000	img/products/laptop_D3noXC9.jpg			1	430000	Laptop
+11	Usado	Laptop Core i5	Portatil Laptop Core I5, Ram 4 GB, DDS 500 GB.	580000	560000	img/products/laptop_Qwl1OEU.jpg			1	530000	Laptop
+12	Usado	Laptop Core i7	Portatil Laptop Core I7, Ram 4 GB, DDS 500 GB.	650000	630000	img/products/laptop_6WuqEKi.jpg			1	600000	Laptop
+
+13	Usado	CPU Core i3	"CPU Core I3, Ram 4 GB, DDS 500 GB.
+La foto puede ser diferente"	370000	350000	img/products/CPU.jpg			1	320000	Cpu
+
+14	Usado	CPU Core 2 duo/Quad	"CPU Core 2 duo/Quad, Ram 4 GB, DDS 320 GB
+La foto puede ser diferente"	300000	270000	img/products/CPU_lRk0Rcp.jpg			1	250000	Cpu
+
+15	Usado	CPU Core i5	"CPU Core I5, Ram 4 GB, DDS 500 GB.
+La foto puede ser diferente"	470000	450000	img/products/CPU_kUnsDAe.jpg			1	420000	Cpu
+
+16	Usado	CPU Core i5	"CPU Core I5, Ram 4 GB, DDS 1 TR.
+La foto puede ser diferente"	510000	490000	img/products/CPU_itIzHz0.jpg			1	460000	Cpu
+
+17	Usado	CPU Core i7	"CPU Core I7, Ram 4 GB, DDS 500 GB.
+La foto puede ser diferente"	600000	580000	img/products/CPU_ijLo1DH.jpg			1	550000	Cpu
+
+18	Usado	CPU Core i7	"CPU Core I7, Ram 4 GB, DDS 1TR.
+La foto puede ser diferente"	650000	630000	img/products/CPU_DtFL6Q4.jpg			1	600000	Cpu
+
+
+
