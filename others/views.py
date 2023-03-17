@@ -6,7 +6,6 @@ from .models import Others
 
 def caps(request):
     other = Others.objects.all()
-    print(other)
 
     context = {"title": "caps", 'other':other}
     return render(request, "others/caps.html", context)
